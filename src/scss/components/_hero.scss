@@ -1,0 +1,90 @@
+$red: rgb(180, 48, 68);
+
+.hero {
+	margin-top: 125px;
+	background-color: $red;
+
+	&:before, &:after{
+		content: ' ';
+		display: table;
+	}
+}
+	.hero-logo-wrap {
+		margin-top: -100px;
+
+		h1 {
+			margin: 12px 0 0 0;
+			font-family: 'alien';
+			font-size: 48px;
+			font-weight: 100;
+			text-align: center;
+			color: white;
+		}
+	}
+	.hero-logo {
+		margin: 0 auto;
+		padding: 10px;
+		width: 150px;
+		border-radius: 75px;
+		background-color: #fff;
+	}
+	.hero-content {
+		margin: -15px auto 0 auto;
+		max-width: 1000px;
+		display: flex;
+		justify-content: space-around;
+		color: #fff;
+
+		> div {
+			max-width: 35%;
+			text-align: center;
+		}
+		h2 {
+			margin: 0px auto 40px auto;
+			padding: 4px 10px;
+			display: inline-block;
+			position: relative;
+			font-size: 24px;
+			font-weight: 200;
+			letter-spacing: 0.1em;
+			text-align: center;
+			text-transform: uppercase;
+			background-color: rgba(255, 255, 255, 0.2);
+			border-radius: 10px;
+
+			i {
+				position: absolute;
+				z-index: 0;
+				top: -20px;
+				font-size: 80px;
+				color: rgba(255,255,255,0.2);
+				transform: rotate(-30deg);
+			}
+		}
+		p {
+			margin: 0 0 40px 0;
+			font-size: 20px;
+			font-weight: 200;
+			text-align: justify;
+		}
+		ul {
+			margin: 0 0 40px 0;
+			padding: 0;
+			list-style: none;
+		}
+		a[name] { display: none; }
+		a {
+			margin: 0 0 40px 0;
+			padding: 6px 12px;
+			display: inline-block;
+			font-size: 22px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $red;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+		}
+	}
+	.hero-startups i { left: -50px; }
+	.hero-enterprise i { left: -75px; }

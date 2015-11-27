@@ -84,13 +84,13 @@ var badge = {
 		var svg = '<svg viewBox="0 0 200 200">';
 		svg += badge.drawTriangles();
 		svg += '</svg>';
-		$('.logo').html(svg);
+		$('.hero-logo').html(svg);
 	},
 	update: function() {
 		badge.interpolate(0.1);
 		badge.draw();
 
-		requestAnimationFrame(badge.update);
+		//requestAnimationFrame(badge.update);
 	}
 };
 
