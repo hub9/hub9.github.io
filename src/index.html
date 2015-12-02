@@ -64,37 +64,43 @@
 	</div>
 </div>
 
-<div class="communicator-wrapper">
-	<a href="contact"></a>
-	<section class="communicator">
-		<form id="contact" method="post">
-			<div class="email">
-				<input type="text" name="email" placeholder="get in touch, enter your email">
-			</div>
-			<div class="text">
-				<textarea name="message" placeholder="and your message"></textarea>
-				<input type="hidden" name="_subject" value="hub9.co: New message">
-				<input type="text" name="_gotcha" style="display: none">
-				<button type="submit"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
-			</div>
-		</form>
-		<script>
-			/*
-			$.ajax({
-				url: "//formspree.io/you@email.com",
-				method: "POST",
-				data: {message: "hello!"},
-				dataType: "json"
-			});
-			 */
-			var contact =  document.getElementById('contact');
-			contact.setAttribute('action', '//formspree.io/' + 'hello' + '@' + 'hub9' + '.' + 'co');
-		</script>
-	</section>
+<div class="message">
+	<a name="message"></a>
+	<form method="post">
+		<h3>Get in touch, send a message</h3>
+		<div class="email">
+			<input type="text" name="email" placeholder="get in touch, enter your email">
+		</div>
+		<div class="text">
+			<textarea name="message" placeholder="and your message"></textarea>
+			<input type="hidden" name="_subject" value="hub9.co: New message">
+			<input type="text" name="_gotcha" style="display: none">
+			<button type="submit"><i class="fa fa-paper-plane"></i></button>
+		</div>
+	</form>
+	<script>
+		/*
+		$.ajax({
+			url: "//formspree.io/you@email.com",
+			method: "POST",
+			data: {message: "hello!"},
+			dataType: "json"
+		});
+		 */
+	</script>
+</div>
+
+<div class="about">
+	<a href="about"></a>
+	<h3>O que é o hub9?</h3>
+	<p>
+		Candidatuss sunt sensorems de emeritis rector! Racana, pes, et mortem. Ubi est clemens clinias? Nunquam consumere finis.
+		Nuclear vexatum iacere de nobilis gabalium, contactus solem! Cum classis congregabo, omnes peses anhelare fatalis, salvus bursaes.
+	</p>
 </div>
 
 <div class="stack">
-	<a href="stack"></a>
+	<a name="stack"></a>
 	<h3>This is what we have been using...</h3>
 	<ul>
 		<li>django</li>
@@ -112,15 +118,6 @@
 		<li>gulp</li>
 		<li>docker</li>
 	</ul>
-</div>
-
-<div class="about">
-	<a href="about"></a>
-	<h3>O que é o hub9?</h3>
-	<p>
-		Candidatuss sunt sensorems de emeritis rector! Racana, pes, et mortem. Ubi est clemens clinias? Nunquam consumere finis.
-		Nuclear vexatum iacere de nobilis gabalium, contactus solem! Cum classis congregabo, omnes peses anhelare fatalis, salvus bursaes.
-	</p>
 </div>
 
 <div class="footer">

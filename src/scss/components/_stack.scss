@@ -1,0 +1,11 @@
+.stack {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #1a323e;
+
+	> * {
+		flex-grow: 1;
+	}
+}
