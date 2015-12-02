@@ -22,11 +22,13 @@
 		border-radius: 10px;
 	}
 	div { margin-bottom: 20px; }
+	div:last-child { margin-bottom: 0; }
 	.text { position: relative; }
 	input, textarea, button { outline: none; }
 	textarea { height: 120px }
 	input, textarea {
 		padding: 6px 8px;
+		display: block;
 		width: 100%;
 		font-size: 18px;
 		font-weight: 300;
