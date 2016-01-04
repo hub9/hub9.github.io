@@ -25,4 +25,15 @@ $(function() {
 		map: map,
 		title: "Bunker"
 	});
+
+	/* Displays the background. */
+	var hero = $('.hero');
+	var pattern = Trianglify({
+		width: hero.width(),
+		height: hero.height(),
+		x_colors: ["#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#a50f15","#67000d"]
+	});
+	$(document).ready(function() {
+		hero.append(pattern.canvas());
+	});
 });

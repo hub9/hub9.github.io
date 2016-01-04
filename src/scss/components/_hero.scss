@@ -1,10 +1,41 @@
+@keyframes show {
+	0% { opacity: 0; }
+	100% { opacity: 0.4; }
+}
+
 .hero {
 	margin-top: 125px;
+	height: 538px;
+	position: relative;
 	background-color: $red;
+
+	@media screen and (max-width: $break-small) {
+		margin-top: 100px;
+	}
 
 	&:before, &:after{
 		content: ' ';
 		display: table;
+	}
+
+	> * {
+		position: relative;
+		z-index: 2;
+	}
+
+	canvas {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		opacity: 0.4;
+
+		animation-name: show;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in;
+		animation-duration: 0.5s;
 	}
 }
 	.hero-logo-wrap {
@@ -33,9 +64,19 @@
 		justify-content: space-around;
 		color: #fff;
 
+		@media screen and (max-width: $break-small) {
+			margin-top: 35px;
+			margin-bottom: -40px;
+			flex-wrap: wrap;
+		}
+
 		> div {
 			max-width: 35%;
 			text-align: center;
+
+			@media screen and (max-width: $break-small) {
+				max-width: 90%;
+			}
 		}
 		h2 {
 			margin: 0 0 40px;
@@ -49,6 +90,10 @@
 			text-transform: uppercase;
 			background-color: rgba(255, 255, 255, 0.2);
 			border-radius: 10px;
+
+			@media screen and (max-width: $break-small) {
+				margin: 0 0 40px 40px;
+			}
 
 			i {
 				position: absolute;
@@ -64,6 +109,10 @@
 			font-size: 20px;
 			font-weight: 200;
 			text-align: justify;
+
+			@media screen and (max-width: $break-small) {
+				margin-bottom: 20px;
+			}
 		}
 		ul {
 			margin: 0 0 40px 0;

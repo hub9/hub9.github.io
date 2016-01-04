@@ -8,6 +8,10 @@
 		width: 100%;
 		max-width: 880px;
 		text-align: center;
+
+		@media screen and (max-width: $break-small) {
+			margin: 40px 20px;
+		}
 	}
 	h3 {
 		margin: 0 0 20px;
