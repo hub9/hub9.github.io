@@ -5,7 +5,7 @@
 
 .hero {
 	margin-top: 125px;
-	height: 538px;
+	//height: 538px;
 	position: relative;
 	background-color: $red;
 
@@ -25,6 +25,8 @@
 
 	canvas {
 		position: absolute;
+		width: 100%;
+		height: 100%;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -66,7 +68,6 @@
 
 		@media screen and (max-width: $break-small) {
 			margin-top: 35px;
-			margin-bottom: -40px;
 			flex-wrap: wrap;
 		}
 
@@ -105,10 +106,14 @@
 			}
 		}
 		p {
-			margin: 0 0 40px 0;
+			margin: 0 0 12px 0;
 			font-size: 20px;
 			font-weight: 200;
 			text-align: justify;
+
+			&:last-of-type {
+				margin: 0 0 32px 0;
+			}
 
 			@media screen and (max-width: $break-small) {
 				margin-bottom: 20px;
@@ -118,6 +123,7 @@
 			margin: 0 0 40px 0;
 			padding: 0;
 			list-style: none;
+			font-size: 18px;
 		}
 		a[name] { display: none; }
 		a {
@@ -133,5 +139,24 @@
 			box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
 		}
 	}
-	.hero-startups i { left: -50px; }
-	.hero-enterprise i { left: -75px; }
+	.hero-startups {
+		i { left: -50px; }
+		h2 { margin-left: 30px; }
+	}
+	.hero-enterprise {
+		i { left: -75px; }
+		h2 { margin-left: 60px; }
+	}
+	.hero-separator {
+		display: none;
+		width: 90%;
+		height: 1px;
+		margin-top: -10px;
+		margin-bottom: 40px;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		border-top: 1px solid rgba(150,150,150,0.1);
+
+		@media screen and (max-width: $break-small) {
+			display: block;
+		}
+	}
