@@ -17,9 +17,20 @@
 		max-width: 880px;
 		display: flex;
 		justify-content: space-between;
+
+		@media screen and (max-width: $break-small) {
+			margin: 40px 0;
+			width: 90%;
+			display: block;
+		}
 	}
 	.footer-about {
 		flex-basis: 10%;
+
+		@media screen and (max-width: $break-small) {
+			float: left;
+			padding-right: 6px;
+		}
 
 		.footer-title {
 			margin: 6px 0 0 0;
@@ -32,10 +43,19 @@
 
 		p {
 			margin-top: 10px;
+			margin-bottom: 0;
 			font-size: 14px;
 			font-weight: 200;
 			text-align: center;
 			color: rgb(119, 145, 157);
+		}
+	}
+	.footer-nav, .footer-links, .footer-mobile-links {
+		a {
+			padding: 2px 8px 4px 8px;
+			color: rgb(163, 182, 192);
+			background-color: rgba(255,255,255,0.1);
+			border-radius: 6px;
 		}
 	}
 	.footer-nav, .footer-links {
@@ -55,11 +75,9 @@
 			display: block;
 			text-align: left;
 		}
-		a {
-			padding: 2px 8px 4px 8px;
-			color: rgb(163, 182, 192);
-			background-color: rgba(255,255,255,0.1);
-			border-radius: 6px;
+
+		@media screen and (max-width: $break-small) {
+			display: none;
 		}
 	}
 	.footer-links {
@@ -67,12 +85,39 @@
 		a { text-decoration: none; }
 		span { text-decoration: underline; }
 	}
+	.footer-mobile-links {
+		display: none;
+		width: 90%;
+		margin: 40px auto 0 auto;
+		text-align: center;
+
+		a {
+			font-size: 20px;
+			margin: 0 12px;
+		}
+
+		@media screen and (max-width: $break-small) {
+			display: block;
+		}
+	}
 	.footer-map {
 		flex-basis: 40%;
 
-		p { font-size: 18px; text-transform: none; }
+		p {
+			font-size: 18px;
+			text-transform: none;
+
+			@media screen and (max-width: $break-small) {
+				text-align: center;
+				font-size: 16px;
+			}
+		}
 		a { color: rgb(163, 182, 192); }
 	}
 	#map {
 		height: 180px;
+
+		@media screen and (max-width: $break-small) {
+			height: 105px;
+		}
 	}

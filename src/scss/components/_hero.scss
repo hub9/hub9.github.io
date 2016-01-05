@@ -5,7 +5,6 @@
 
 .hero {
 	margin-top: 125px;
-	//height: 538px;
 	position: relative;
 	background-color: $red;
 
@@ -60,7 +59,7 @@
 		background-color: #fff;
 	}
 	.hero-content {
-		margin: -15px auto 0 auto;
+		margin: -15px auto 40px auto;
 		max-width: 1000px;
 		display: flex;
 		justify-content: space-around;
@@ -68,6 +67,7 @@
 
 		@media screen and (max-width: $break-small) {
 			margin-top: 35px;
+			margin-bottom: 0;
 			flex-wrap: wrap;
 		}
 
