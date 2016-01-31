@@ -7,3 +7,9 @@ html, body {
 	letter-spacing: 0.02em;
 	background: #fff;
 }
+
+p {
+	@media screen and (max-width: $break-small) {
+		font-size: 16px !important;
+	}
+}

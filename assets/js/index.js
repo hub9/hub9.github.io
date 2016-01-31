@@ -5,7 +5,7 @@ $(function() {
 	$(window).scroll(function() {
 		if ($(window).scrollTop() + $(window).height() > aboutElement.offset().top + aboutElement.height()) {
 			if (!played) {
-				$('#video').get(0).play();
+				//$('#video').get(0).play();
 				played = true;
 			}
 		}
@@ -35,5 +35,11 @@ $(function() {
 	});
 	$(document).ready(function() {
 		hero.append(pattern.canvas());
+
+		$('.projects-carousel').slick({
+			centerMode: true,
+			centerPadding: '7.5%',
+			dots: true
+		});
 	});
 });
