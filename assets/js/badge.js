@@ -90,7 +90,7 @@ var badge = {
 		badge.interpolate(0.1);
 		badge.draw();
 
-		//requestAnimationFrame(badge.update);
+		requestAnimationFrame(badge.update);
 	}
 };
 

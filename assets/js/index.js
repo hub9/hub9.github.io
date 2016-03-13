@@ -38,7 +38,7 @@ $(function() {
 
 		$('.projects-carousel').slick({
 			centerMode: true,
-			centerPadding: '7.5%',
+			centerPadding: '12%',
 			dots: true
 		});
 	});
