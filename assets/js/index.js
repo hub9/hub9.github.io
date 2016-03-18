@@ -33,13 +33,21 @@ $(function() {
 		height: hero.height(),
 		x_colors: ["#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#a50f15","#67000d"]
 	});
+
 	$(document).ready(function() {
 		hero.append(pattern.canvas());
 
 		$('.projects-carousel').slick({
 			centerMode: true,
-			centerPadding: '12%',
-			dots: true
+			centerPadding: '18%',
+			dots: false,
+			responsive: [{
+				breakpoint: 1300,
+				settings: { centerMode: true, centerPadding: '12%' }
+			},{
+				breakpoint: 800,
+				settings: { centerMode: true, centerPadding: '6%' }
+			}]
 		});
 	});
 });
