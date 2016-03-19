@@ -1,3 +1,4 @@
+.slick-slider { margin-bottom: 0; }
 .projects {
 	padding: 80px 0;
 	text-align: center;
@@ -19,10 +20,6 @@
 		color: #fff;
 		background-color: rgba(255,255,255,0.1);
 		border-radius: 10px;
-
-		@media screen and (max-width: $break-small) {
-			margin: 0;
-		}
 	}
 }
 	.projects-carousel {
@@ -76,6 +73,7 @@
 			img {
 				margin: 0 auto;
 				max-width: 70%;
+				max-height: 80%;
 				height: auto;
 				align-self: center;
 				display: block;
@@ -91,8 +89,8 @@
 			}
 		}
 
-		@media screen and (max-width: $break-small) {
-			margin: 40px 10px 0 10px;
+		@media screen and (max-width: 700px) {
+			margin: 0 20px 0 20px;
 			padding: 0;
 
 			._container {
@@ -106,6 +104,7 @@
 				margin: 0;
 
 				img {
+					margin: 0 auto;
 					max-width: 100%;
 					width: auto;
 					height: auto;
