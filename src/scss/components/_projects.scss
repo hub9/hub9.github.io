@@ -1,4 +1,18 @@
 .slick-slider { margin-bottom: 0; }
+.slick-dots {
+	margin: 0;
+	position: static;
+
+	li button:before {
+		font-size: 12px;
+		color: #fff;
+	}
+	li.slick-active button:before {
+		opacity: .75;
+		color: #fff;
+	}
+}
+
 .projects {
 	padding: 80px 0;
 	text-align: center;
@@ -34,7 +48,6 @@
 	.projects-item {
 		margin: 0 20px;
 		position: relative;
-		//width: 90%;
 		color: #fefefe;
 		background: rgba(0,0,0,0.3);
 		border-radius: 10px;
@@ -96,6 +109,7 @@
 			._container {
 				flex-flow: column;
 				padding-top: 48px;
+				min-height: 670px;
 			}
 			._info {
 				margin: 14px 18px;
@@ -112,27 +126,35 @@
 					border-radius: 0 0 10px 10px;
 				}
 			}
-			._logo {
-				height: 48px;
-
-				img {
-
-				}
-			}
+			._logo { height: 48px; }
+			ul { display: none; }
 		}
 
 		h4, p { font-weight: 200; text-align: center; color: #fff; }
 		h4 { margin: 0 0 20px; font-size: 24px; text-transform: uppercase; letter-spacing: 0.1em; }
 		p { margin: 0 0 12px; font-size: 20px; text-align: justify; }
-		a {
-			margin: 6px 10px;
-			position: absolute;
-			top: 0;
-			right: 0;
-			font-size: 28px;
-			color: #fff;
-			opacity: 0.2;
+		a { color: #b0b0b0; text-decoration: none; }
+		a:visited { color: #a0a0a0; }
+		a:hover { color: #d0d0d0; }
+		ul {
+			margin: 20px auto 0 auto;
+			padding: 0;
+			list-style-type: none;
+		}
+		li {
+			margin: 8px;
+			padding: 2px 10px 4px 10px;
+			display: inline-block;
+			font-size: 22px;
+			font-weight: 200;
+			letter-spacing: 0.1em;
+			color: rgba(255, 255, 255, 0.8);
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 12px;
 
-			&:hover { opacity: 0.3; }
+			@media screen and (max-width: $break-small) {
+				margin: 8px 4px;
+				font-size: 18px;
+			}
 		}
 	}
