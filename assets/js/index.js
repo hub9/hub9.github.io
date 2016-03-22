@@ -188,7 +188,7 @@ $(function() {
 					centerPadding: '18%',
 					dots: true,
 					arrows: false,
-					autoplay: false,
+					autoplay: true,
 					autoplaySpeed: 6000,
 					responsive: [{
 						breakpoint: 1300,
