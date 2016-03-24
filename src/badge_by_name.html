@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+.hero-logo {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 40px auto;
+}
+</style>
+
+<h2>Digite seu nome completo para gerar uma versão do logo</h2>
+
+<form onsubmit="calculate(event); return false;">
+	<label>Nome completo</label>
+	<input type="text" id="name">
+	<button type="submit">Gerar</button>
+</form>
+
+	<div class="hero-logo"></div>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../assets/js/badge.js"></script>
+<script>
+function calculate(e){
+	badge.calculate($("#name").val());
+	badge.draw();
+};
+</script>
+
+</body>
+</html>
