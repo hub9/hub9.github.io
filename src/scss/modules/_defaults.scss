@@ -1,0 +1,18 @@
+* {
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  @include vendor(box-sizing, border-box);
+}
+html {
+  font-size:62.5%;
+}
+body {
+  font:300 13px/1.6 "proxima-nova",sans-serif;
+  background:#fff;
+  color:#444;
+}
+
+.main {
+	max-width: 700px; margin: 0 auto;
+}
